@@ -64,11 +64,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC       &kp N1        &kp N2        &kp N3          &kp N4     &kp N5  &kp N6  &kp N7     &kp N8           &kp N9          &kp N0          &kp BACKSPACE
-&kp TAB       &kp Q         &kp W         &kp E           &kp R      &kp T   &kp Y   &kp U      &kp I            &kp O           &kp P           &kp BSLH
-&kp CAPSLOCK  &kp A         &kp S         &kp D           &kp F      &kp G   &kp H   &kp J      &kp K            &kp L           &kp SEMI        &kp SQT
-&kp LCTRL     &kp Z         &kp X         &kp C           &kp V      &kp B   &kp N   &kp M      &kp COMMA        &kp DOT         &kp UP_ARROW    &kp FSLH
-&mkp RCLK     &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp ENTER  &mo 2   &mo 1   &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp ESC       &kp N1        &kp N2        &kp N3          &kp N4          &kp N5  &kp N6       &kp N7           &kp N8            &kp N9          &kp N0          &kp BACKSPACE
+&kp TAB       &kp Q         &kp W         &kp E           &kp R           &kp T   &kp Y        &kp U            &kp I             &kp O           &kp P           &kp BSLH
+&kp CAPSLOCK  &kp A         &kp S         &kp D           &kp F           &kp G   &kp H        &kp J            &kp K             &kp L           &kp SEMI        &kp SQT
+&kp LCTRL     &kp Z         &kp X         &kp C           &kp V           &kp B   &kp N        &kp M            &kp COMMA         &kp DOT         &kp UP_ARROW    &kp FSLH
+&mkp RCLK     &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &mo 2   &lt 1 SPACE  &kp RIGHT_SHIFT  &kp LANG_HANGEUL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
@@ -123,7 +123,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
