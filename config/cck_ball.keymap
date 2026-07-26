@@ -98,8 +98,8 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE       &kp N1               &kp N2                &kp N3                &kp N4               &kp N5  &kp N6  &kp N7     &kp N8            &kp N9          &kp N0          &kp MINUS
-&kp TAB         &kp Q                &kp W                 &kp E                 &kp R                &kp T   &kp Y   &kp U      &kp I             &kp O           &kp P           &kp BACKSPACE
+&kp GRAVE       &kp N1               &kp N2                &kp N3                &kp N4               &kp N5  &kp N6  &kp N7     &kp N8            &kp N9          &kp N0          &kp BACKSPACE
+&kp TAB         &kp Q                &kp W                 &kp E                 &kp R                &kp T   &kp Y   &kp U      &kp I             &kp O           &kp P           &kp SLASH
 &kp CAPSLOCK    &click_or_key MB4 A  &click_or_key LCLK S  &click_or_key RCLK D  &click_or_key MB5 F  &kp G   &kp H   &kp J      &kp K             &kp L           &kp SEMI        &kp SQT
 &kp LEFT_SHIFT  &kp Z                &kp X                 &kp C                 &kp V                &kp B   &kp N   &kp M      &kp COMMA         &kp DOT         &kp UP_ARROW    &kp RIGHT_SHIFT
 &kp LCTRL       &kp LEFT_WIN         &kp LEFT_GUI          &kp LEFT_ALT          &kp ENTER            &mo 2   &mo 1   &kp SPACE  &kp LANG_HANGEUL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
@@ -157,7 +157,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
