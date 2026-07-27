@@ -98,11 +98,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE           &kp N1        &kp N2        &kp N3     &kp N4     &kp N5  &kp N6  &kp N7     &kp N8     &kp N9          &kp N0          &kp BACKSPACE
+&kp GRAVE           &kp N1        &kp N2        &kp N3     &kp N4     &kp N5  &kp N6  &kp N7     &kp N8     &kp N9          &kp N0          &kp DEL
 &kp TAB             &kp Q         &kp W         &kp E      &kp R      &kp T   &kp Y   &kp U      &kp I      &kp O           &kp P           &kp BACKSPACE
-&mt CAPSLOCK LANG1  &kp A         &kp S         &kp D      &kp F      &kp G   &kp H   &kp J      &kp K      &kp L           &kp SEMI        &kp SQT
+&mt CAPSLOCK LANG1  &kp A         &kp S         &kp D      &kp F      &kp G   &kp H   &kp J      &kp K      &kp L           &kp SEMI        &kp ENTER
 &kp LEFT_SHIFT      &kp Z         &kp X         &kp C      &kp V      &kp B   &kp N   &kp M      &kp COMMA  &kp DOT         &kp UP_ARROW    &kp RIGHT_SHIFT
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &kp ENTER  &mkp RCLK  &mo 2   &mo 1   &kp SLASH  &kp SPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &mo 2   &mo 1   &kp SLASH  &kp SPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
@@ -157,22 +157,10 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&scroll_vertical_encoder>;
         };
     };
 };
