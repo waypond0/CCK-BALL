@@ -106,7 +106,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
+                <&scroll_vertical_encoder>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -157,7 +157,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
@@ -165,14 +165,14 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans              &trans               &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&scroll_vertical_encoder>;
         };
     };
 };
