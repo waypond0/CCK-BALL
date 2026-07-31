@@ -80,11 +80,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE           &kp N1        &kp N2        &kp N3    &kp N4     &kp N5    &kp N6  &kp N7          &kp N8     &kp N9          &kp N0          &kp MINUS
-&kp TAB             &kp Q         &kp W         &kp E     &kp R      &kp T     &kp Y   &kp U           &kp I      &kp O           &kp P           &kp BACKSPACE
-&mt CAPSLOCK LANG1  &kp A         &kp S         &kp D     &kp F      &kp G     &kp H   &kp J           &kp K      &kp L           &kp SEMI        &kp ENTER
-&kp LEFT_SHIFT      &kp Z         &kp X         &kp C     &kp V      &kp B     &kp N   &kp M           &kp COMMA  &kp DOT         &kp UP_ARROW    &kp SLASH
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &kp SPACE  &mkp MB2  &mo 1   &kp LEFT_SHIFT  &mo 2      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp GRAVE           &kp N1        &kp N2        &kp N3    &kp N4    &kp N5  &kp N6  &kp N7          &kp N8     &kp N9          &kp N0          &kp MINUS
+&kp TAB             &kp Q         &kp W         &kp E     &kp R     &kp T   &kp Y   &kp U           &kp I      &kp O           &kp P           &kp BACKSPACE
+&mt CAPSLOCK LANG1  &kp A         &kp S         &kp D     &kp F     &kp G   &kp H   &kp J           &kp K      &kp L           &kp SEMI        &kp ENTER
+&kp LEFT_SHIFT      &kp Z         &kp X         &kp C     &kp V     &kp B   &kp N   &kp M           &kp COMMA  &kp DOT         &kp UP_ARROW    &kp RSHIFT
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB1  &mkp MB2  &mo 2   &mo 1   &kp LEFT_SHIFT  &kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
@@ -94,11 +94,11 @@
 
         F_layers {
             bindings = <
-&kp F12      &kp F1       &kp F2  &kp F3    &kp F4  &kp F5    &kp F6  &kp F7    &kp F8    &kp F9  &kp F10  &kp F11
-&trans       &gyeom_open  &trans  &trans    &trans  &trans    &trans  &mkp MB4  &mkp MB5  &trans  &trans   &trans
-&trans       &trans       &trans  &trans    &trans  &trans    &trans  &mkp MB1  &mkp MB2  &trans  &trans   &trans
-&trans       &trans       &trans  &trans    &trans  &trans    &trans  &trans    &trans    &trans  &trans   &trans
-&bootloader  &trans       &trans  &mkp MB4  &trans  &mkp MB5  &trans  &trans    &trans    &trans  &trans   &bootloader
+&kp F12  &kp F1       &kp F2  &kp F3    &kp F4    &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &gyeom_open  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans       &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans       &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans       &trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans   &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -139,7 +139,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
